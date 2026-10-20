@@ -1,267 +1,787 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html>
+<head>
+    <meta charset=utf8>
+    <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name=viewport>
+    <style>:root {
+        color-scheme: light;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px)
+    }
+
+    html {
+        scroll-padding-top: env(safe-area-inset-top, 0px)
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font: 14px -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #fff;
+        color: #000
+    }
+
+    img {
+        max-width: 100%
+    }
+
+    [hidden]:not([hidden=until-found i]) {
+        display: none !important
+    }</style>
+</head>
+<body>
 <title>Decálogo Ético Profesional</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<meta content="cover" name="claude:viewport-fit-sides">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet">
 <style>
-/* Layout: banda institucional azul con emblema → filtros → mapa de 3 ramas (personal / social / profesional) que bajan de un tronco común → nota de fuente */
-:root{
-  --bg:#F3F6FA; --surface:#FFFFFF; --ink:#16212E; --muted:#556577; --line:#C9D6E3;
-  --navy:#1F4E79; --navy-deep:#16324F; --on-navy:#FFFFFF; --on-navy-soft:#C7D8EA;
-  --personal:#A9650F; --personal-tint:#FBEFD9;
-  --social:#16756D; --social-tint:#DDF1EE;
-  --prof:#1F4E79; --prof-tint:#DCE8F4;
-  --focus:#E09A2C;
-  --f-display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
-  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0E1620; --surface:#15212E; --ink:#E6EDF5; --muted:#9AAABB; --line:#2A3A4C;
-  --navy:#1B4369; --navy-deep:#0B1724; --on-navy:#FFFFFF; --on-navy-soft:#AFC6DE;
-  --personal:#F0B35A; --personal-tint:#33260F;
-  --social:#5CC9BC; --social-tint:#10302D;
-  --prof:#8DB8E4; --prof-tint:#16293D;
-  color-scheme:dark;}}
-:root[data-theme="dark"]{
-  --bg:#0E1620; --surface:#15212E; --ink:#E6EDF5; --muted:#9AAABB; --line:#2A3A4C;
-  --navy:#1B4369; --navy-deep:#0B1724; --on-navy:#FFFFFF; --on-navy-soft:#AFC6DE;
-  --personal:#F0B35A; --personal-tint:#33260F;
-  --social:#5CC9BC; --social-tint:#10302D;
-  --prof:#8DB8E4; --prof-tint:#16293D;
-  color-scheme:dark;}
+    /* Layout: banda institucional azul con emblema → filtros → mapa de 3 ramas (personal / social / profesional) que bajan de un tronco común → nota de fuente */
+    :root {
+        --bg: #F3F6FA;
+        --surface: #FFFFFF;
+        --ink: #16212E;
+        --muted: #556577;
+        --line: #C9D6E3;
+        --navy: #1F4E79;
+        --navy-deep: #16324F;
+        --on-navy: #FFFFFF;
+        --on-navy-soft: #C7D8EA;
+        --personal: #A9650F;
+        --personal-tint: #FBEFD9;
+        --social: #16756D;
+        --social-tint: #DDF1EE;
+        --prof: #1F4E79;
+        --prof-tint: #DCE8F4;
+        --focus: #E09A2C;
+        --f-display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+        --f-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    }
 
-*{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;margin:0}
-.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+    @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+            --bg: #0E1620;
+            --surface: #15212E;
+            --ink: #E6EDF5;
+            --muted: #9AAABB;
+            --line: #2A3A4C;
+            --navy: #1B4369;
+            --navy-deep: #0B1724;
+            --on-navy: #FFFFFF;
+            --on-navy-soft: #AFC6DE;
+            --personal: #F0B35A;
+            --personal-tint: #33260F;
+            --social: #5CC9BC;
+            --social-tint: #10302D;
+            --prof: #8DB8E4;
+            --prof-tint: #16293D;
+            color-scheme: dark;
+        }
+    }
 
-/* Banda superior */
-.band{background:var(--navy-deep);color:var(--on-navy)}
-.band .wrap{padding-block:40px 44px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
-.eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-navy-soft);font-weight:700;margin:0}
-h1{font-family:var(--f-display);font-weight:800;font-size:clamp(2rem,4.6vw,3.6rem);line-height:1.02;margin:.4rem 0 .9rem;text-wrap:balance;letter-spacing:-.01em}
-h1 em{font-style:normal;color:#F0B35A}
-.lede{max-width:60ch;color:var(--on-navy-soft);margin:0;font-size:1.05rem}
-.byline{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:.92rem;color:var(--on-navy-soft)}
-.byline b{color:var(--on-navy);font-weight:600}
-.emblem{width:200px;height:200px;max-width:100%}
+    :root[data-theme="dark"] {
+        --bg: #0E1620;
+        --surface: #15212E;
+        --ink: #E6EDF5;
+        --muted: #9AAABB;
+        --line: #2A3A4C;
+        --navy: #1B4369;
+        --navy-deep: #0B1724;
+        --on-navy: #FFFFFF;
+        --on-navy-soft: #AFC6DE;
+        --personal: #F0B35A;
+        --personal-tint: #33260F;
+        --social: #5CC9BC;
+        --social-tint: #10302D;
+        --prof: #8DB8E4;
+        --prof-tint: #16293D;
+        color-scheme: dark;
+    }
 
-/* Filtros */
-.filters{display:flex;flex-wrap:wrap;gap:10px;padding-block:26px 6px}
-.chip{font:600 .95rem var(--f-body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 16px;border-radius:999px;cursor:pointer;display:inline-flex;gap:8px;align-items:center}
-.chip .dot{width:10px;height:10px;border-radius:50%;background:var(--c,var(--muted))}
-.chip[aria-pressed="true"]{border-color:var(--c,var(--ink));background:var(--t,var(--surface));}
-.chip:focus-visible,.how:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
-.hint{color:var(--muted);font-size:.9rem;margin:6px 0 0}
+    * {
+        box-sizing: border-box
+    }
 
-/* Tronco y ramas */
-.trunk{display:flex;justify-content:center;padding-top:22px}
-.trunk span{font-family:var(--f-display);font-weight:700;font-size:.95rem;background:var(--navy);color:var(--on-navy);padding:8px 18px;border-radius:8px}
-.tree{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding-top:44px;padding-bottom:28px}
-.tree::before{content:"";position:absolute;top:0;left:50%;width:2px;height:22px;background:var(--line)}
-.tree::after{content:"";position:absolute;top:22px;left:16.66%;right:16.66%;height:2px;background:var(--line)}
-.branch{position:relative;min-width:0;display:flex;flex-direction:column;gap:14px}
-.branch::before{content:"";position:absolute;top:-22px;left:50%;width:2px;height:22px;background:var(--line)}
-.branch[hidden]{display:none!important}
+    body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family: var(--f-body);
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0
+    }
 
-.head{background:var(--c);color:var(--surface);border-radius:12px;padding:16px 18px;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center}
-:root:not([data-theme="light"]) .head{color:var(--surface)}
-.head .count{grid-row:span 2;font-family:var(--f-display);font-weight:800;font-size:2.4rem;line-height:1}
-.head h2{font-family:var(--f-display);font-weight:700;font-size:1.3rem;margin:0;line-height:1.1}
-.head p{margin:0;font-size:.9rem;opacity:.92}
+    .wrap {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding-left: max(16px, env(safe-area-inset-left, 0px));
+        padding-right: max(16px, env(safe-area-inset-right, 0px))
+    }
 
-.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;grid-template-columns:64px 1fr;gap:6px 14px;align-items:start;transition:transform .15s ease,box-shadow .15s ease}
-.card:hover{transform:translateY(-2px);box-shadow:0 8px 20px -12px rgba(22,50,79,.45)}
-.card svg{width:64px;height:64px;grid-row:span 3}
-.num{font:700 .78rem var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:var(--c)}
-.card h3{font-family:var(--f-display);font-weight:700;font-size:1.15rem;line-height:1.15;margin:0;color:var(--ink);text-wrap:balance}
-.card p{margin:0;color:var(--muted);font-size:.96rem}
-.src{grid-column:2;font-size:.78rem;font-weight:600;color:var(--c);background:var(--t);border-radius:6px;padding:3px 8px;justify-self:start;margin-top:4px}
-.how{grid-column:1/-1;margin-top:6px;font:600 .88rem var(--f-body);color:var(--c);background:none;border:0;border-top:1px dashed var(--line);padding:10px 0 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
-.how::after{content:"+";font-size:1.2rem;line-height:1}
-.how[aria-expanded="true"]::after{content:"–"}
-.detail{grid-column:1/-1;background:var(--t);border-radius:8px;padding:10px 12px;font-size:.93rem;color:var(--ink);margin:4px 0 0}
+    /* Banda superior */
+    .band {
+        background: var(--navy-deep);
+        color: var(--on-navy)
+    }
 
-.personal{--c:var(--personal);--t:var(--personal-tint)}
-.social{--c:var(--social);--t:var(--social-tint)}
-.prof{--c:var(--prof);--t:var(--prof-tint)}
-.chip.all{--c:var(--navy)}
+    .band .wrap {
+        padding-block: 40px 44px;
+        display: grid;
+        grid-template-columns:1fr auto;
+        gap: 32px;
+        align-items: center
+    }
 
-/* Pie */
-.foot{border-top:1px solid var(--line);margin-top:8px}
-.foot .wrap{padding-block:22px 36px;color:var(--muted);font-size:.88rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+    .eyebrow {
+        font-size: .8rem;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--on-navy-soft);
+        font-weight: 700;
+        margin: 0
+    }
 
-/* Ilustraciones */
-.ill .bgc{fill:var(--t)} .ill .st{stroke:var(--c);fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round} .ill .fl{fill:var(--c)} .ill .pa{fill:var(--surface);stroke:var(--c);stroke-width:2.6;stroke-linejoin:round}
+    h1 {
+        font-family: var(--f-display);
+        font-weight: 800;
+        font-size: clamp(2rem, 4.6vw, 3.6rem);
+        line-height: 1.02;
+        margin: .4rem 0 .9rem;
+        text-wrap: balance;
+        letter-spacing: -.01em
+    }
 
-@media (max-width:860px){
-  .band .wrap{grid-template-columns:1fr}
-  .emblem{width:140px;height:140px}
-  .tree{grid-template-columns:1fr;padding-top:18px}
-  .tree::before,.tree::after,.branch::before{display:none}
-}
-@media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+    h1 em {
+        font-style: normal;
+        color: #F0B35A
+    }
+
+    .lede {
+        max-width: 60ch;
+        color: var(--on-navy-soft);
+        margin: 0;
+        font-size: 1.05rem
+    }
+
+    .byline {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 22px;
+        font-size: .92rem;
+        color: var(--on-navy-soft)
+    }
+
+    .byline b {
+        color: var(--on-navy);
+        font-weight: 600
+    }
+
+    .emblem {
+        width: 200px;
+        height: 200px;
+        max-width: 100%
+    }
+
+    /* Filtros */
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-block: 26px 6px
+    }
+
+    .chip {
+        font: 600 .95rem var(--f-body);
+        border: 1.5px solid var(--line);
+        background: var(--surface);
+        color: var(--ink);
+        padding: 8px 16px;
+        border-radius: 999px;
+        cursor: pointer;
+        display: inline-flex;
+        gap: 8px;
+        align-items: center
+    }
+
+    .chip .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--c, var(--muted))
+    }
+
+    .chip[aria-pressed="true"] {
+        border-color: var(--c, var(--ink));
+        background: var(--t, var(--surface));
+    }
+
+    .chip:focus-visible, .how:focus-visible {
+        outline: 3px solid var(--focus);
+        outline-offset: 2px
+    }
+
+    .hint {
+        color: var(--muted);
+        font-size: .9rem;
+        margin: 6px 0 0
+    }
+
+    /* Tronco y ramas */
+    .trunk {
+        display: flex;
+        justify-content: center;
+        padding-top: 22px
+    }
+
+    .trunk span {
+        font-family: var(--f-display);
+        font-weight: 700;
+        font-size: .95rem;
+        background: var(--navy);
+        color: var(--on-navy);
+        padding: 8px 18px;
+        border-radius: 8px
+    }
+
+    .tree {
+        position: relative;
+        display: grid;
+        grid-template-columns:repeat(3, minmax(0, 1fr));
+        gap: 22px;
+        padding-top: 44px;
+        padding-bottom: 28px
+    }
+
+    .tree::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 22px;
+        background: var(--line)
+    }
+
+    .tree::after {
+        content: "";
+        position: absolute;
+        top: 22px;
+        left: 16.66%;
+        right: 16.66%;
+        height: 2px;
+        background: var(--line)
+    }
+
+    .branch {
+        position: relative;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 14px
+    }
+
+    .branch::before {
+        content: "";
+        position: absolute;
+        top: -22px;
+        left: 50%;
+        width: 2px;
+        height: 22px;
+        background: var(--line)
+    }
+
+    .branch[hidden] {
+        display: none !important
+    }
+
+    .head {
+        background: var(--c);
+        color: var(--surface);
+        border-radius: 12px;
+        padding: 16px 18px;
+        display: grid;
+        grid-template-columns:auto 1fr;
+        gap: 4px 14px;
+        align-items: center
+    }
+
+    :root:not([data-theme="light"]) .head {
+        color: var(--surface)
+    }
+
+    .head .count {
+        grid-row: span 2;
+        font-family: var(--f-display);
+        font-weight: 800;
+        font-size: 2.4rem;
+        line-height: 1
+    }
+
+    .head h2 {
+        font-family: var(--f-display);
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin: 0;
+        line-height: 1.1
+    }
+
+    .head p {
+        margin: 0;
+        font-size: .9rem;
+        opacity: .92
+    }
+
+    .card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 16px;
+        display: grid;
+        grid-template-columns:64px 1fr;
+        gap: 6px 14px;
+        align-items: start;
+        transition: transform .15s ease, box-shadow .15s ease
+    }
+
+    .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px -12px rgba(22, 50, 79, .45)
+    }
+
+    .card svg {
+        width: 64px;
+        height: 64px;
+        grid-row: span 3
+    }
+
+    .num {
+        font: 700 .78rem var(--f-body);
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--c)
+    }
+
+    .card h3 {
+        font-family: var(--f-display);
+        font-weight: 700;
+        font-size: 1.15rem;
+        line-height: 1.15;
+        margin: 0;
+        color: var(--ink);
+        text-wrap: balance
+    }
+
+    .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: .96rem
+    }
+
+    .src {
+        grid-column: 2;
+        font-size: .78rem;
+        font-weight: 600;
+        color: var(--c);
+        background: var(--t);
+        border-radius: 6px;
+        padding: 3px 8px;
+        justify-self: start;
+        margin-top: 4px
+    }
+
+    .how {
+        grid-column: 1/-1;
+        margin-top: 6px;
+        font: 600 .88rem var(--f-body);
+        color: var(--c);
+        background: none;
+        border: 0;
+        border-top: 1px dashed var(--line);
+        padding: 10px 0 0;
+        text-align: left;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    .how::after {
+        content: "+";
+        font-size: 1.2rem;
+        line-height: 1
+    }
+
+    .how[aria-expanded="true"]::after {
+        content: "–"
+    }
+
+    .detail {
+        grid-column: 1/-1;
+        background: var(--t);
+        border-radius: 8px;
+        padding: 10px 12px;
+        font-size: .93rem;
+        color: var(--ink);
+        margin: 4px 0 0
+    }
+
+    .personal {
+        --c: var(--personal);
+        --t: var(--personal-tint)
+    }
+
+    .social {
+        --c: var(--social);
+        --t: var(--social-tint)
+    }
+
+    .prof {
+        --c: var(--prof);
+        --t: var(--prof-tint)
+    }
+
+    .chip.all {
+        --c: var(--navy)
+    }
+
+    /* Pie */
+    .foot {
+        border-top: 1px solid var(--line);
+        margin-top: 8px
+    }
+
+    .foot .wrap {
+        padding-block: 22px 36px;
+        color: var(--muted);
+        font-size: .88rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px
+    }
+
+    /* Ilustraciones */
+    .ill .bgc {
+        fill: var(--t)
+    }
+
+    .ill .st {
+        stroke: var(--c);
+        fill: none;
+        stroke-width: 2.6;
+        stroke-linecap: round;
+        stroke-linejoin: round
+    }
+
+    .ill .fl {
+        fill: var(--c)
+    }
+
+    .ill .pa {
+        fill: var(--surface);
+        stroke: var(--c);
+        stroke-width: 2.6;
+        stroke-linejoin: round
+    }
+
+    @media (max-width: 860px) {
+        .band .wrap {
+            grid-template-columns:1fr
+        }
+
+        .emblem {
+            width: 140px;
+            height: 140px
+        }
+
+        .tree {
+            grid-template-columns:1fr;
+            padding-top: 18px
+        }
+
+        .tree::before, .tree::after, .branch::before {
+            display: none
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .card {
+            transition: none
+        }
+
+        .card:hover {
+            transform: none
+        }
+    }
 </style>
 
 <header class="band">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow">Ética y responsabilidad social · Reto 4 · Unidad 3</p>
-      <h1>Mi decálogo ético como <em>desarrollador de software</em></h1>
-      <p class="lede">Diez compromisos que guían cómo actúo conmigo mismo, con la sociedad y en mi profesión. Los cuatro profesionales parten del Código de Ética y Práctica Profesional de Ingeniería de Software (IEEE-CS/ACM).</p>
-      <div class="byline"><span><b>Aaron Campos Miranda</b></span><span>Matrícula 26011356</span><span>Ingeniería en Desarrollo de Software · UVEG</span></div>
+    <div class="wrap">
+        <div>
+            <p class="eyebrow">Ética y responsabilidad social · Reto 4 · Unidad 3</p>
+            <h1>Mi decálogo ético como <em>desarrollador de software</em></h1>
+            <p class="lede">Diez compromisos que guían cómo actúo conmigo mismo, con la sociedad y en mi profesión. Los
+                cuatro profesionales parten del Código de Ética y Práctica Profesional de Ingeniería de Software
+                (IEEE-CS/ACM).</p>
+            <div class="byline"><span><b>Aaron Campos Miranda</b></span><span>Matrícula 26011356</span><span>Ingeniería en Desarrollo de Software · UVEG</span>
+            </div>
+        </div>
+        <svg aria-label="Emblema: tres arcos de colores alrededor del número 10" class="emblem" role="img"
+             viewBox="0 0 200 200">
+            <circle cx="100" cy="100" fill="none" r="84" stroke="#2A5F8F" stroke-width="16"/>
+            <path d="M100 16 A84 84 0 0 1 172.7 142" fill="none" stroke="#F0B35A" stroke-width="16"/>
+            <path d="M172.7 142 A84 84 0 0 1 27.3 142" fill="none" stroke="#5CC9BC" stroke-width="16"/>
+            <path d="M27.3 142 A84 84 0 0 1 100 16" fill="none" stroke="#8DB8E4" stroke-width="16"/>
+            <circle cx="100" cy="100" fill="#1F4E79" r="58"/>
+            <text fill="#FFFFFF" font-family="Bricolage Grotesque, Trebuchet MS, sans-serif" font-size="52" font-weight="800"
+                  text-anchor="middle" x="100" y="112">10
+            </text>
+            <text fill="#C7D8EA" font-family="Source Sans 3, sans-serif" font-size="11" font-weight="700" letter-spacing="2"
+                  text-anchor="middle" x="100" y="134">CÓDIGOS
+            </text>
+        </svg>
     </div>
-    <svg class="emblem" viewBox="0 0 200 200" role="img" aria-label="Emblema: tres arcos de colores alrededor del número 10">
-      <circle cx="100" cy="100" r="84" fill="none" stroke="#2A5F8F" stroke-width="16"/>
-      <path d="M100 16 A84 84 0 0 1 172.7 142" fill="none" stroke="#F0B35A" stroke-width="16"/>
-      <path d="M172.7 142 A84 84 0 0 1 27.3 142" fill="none" stroke="#5CC9BC" stroke-width="16"/>
-      <path d="M27.3 142 A84 84 0 0 1 100 16" fill="none" stroke="#8DB8E4" stroke-width="16"/>
-      <circle cx="100" cy="100" r="58" fill="#1F4E79"/>
-      <text x="100" y="112" text-anchor="middle" font-family="Bricolage Grotesque, Trebuchet MS, sans-serif" font-weight="800" font-size="52" fill="#FFFFFF">10</text>
-      <text x="100" y="134" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-weight="700" font-size="11" letter-spacing="2" fill="#C7D8EA">CÓDIGOS</text>
-    </svg>
-  </div>
 </header>
 
 <main class="wrap">
-  <div class="filters" role="group" aria-label="Filtrar por tipo de ética">
-    <button class="chip all" id="f-all" data-f="all" aria-pressed="true"><span class="dot"></span>Todos (10)</button>
-    <button class="chip personal" id="f-personal" data-f="personal" aria-pressed="false"><span class="dot"></span>Ética personal (3)</button>
-    <button class="chip social" id="f-social" data-f="social" aria-pressed="false"><span class="dot"></span>Ética social (3)</button>
-    <button class="chip prof" id="f-prof" data-f="prof" aria-pressed="false"><span class="dot"></span>Ética profesional (4)</button>
-  </div>
-  <p class="hint">Toca un tipo de ética para verlo solo, o abre “Cómo lo vivo” en cada código.</p>
-
-  <div class="trunk"><span>Decálogo ético profesional</span></div>
-
-  <section class="tree" id="tree">
-    <!-- PERSONAL -->
-    <div class="branch personal" data-b="personal">
-      <div class="head"><span class="count">3</span><h2>Ética personal</h2><p>Cómo me conduzco conmigo mismo.</p></div>
-
-      <article class="card">
-        <svg class="ill" viewBox="0 0 64 64" aria-hidden="true"><circle class="bgc" cx="32" cy="32" r="30"/><path class="pa" d="M32 12 L48 18 V31 C48 41 41 48 32 52 C23 48 16 41 16 31 V18 Z"/><path class="st" d="M24 32 L30 38 L41 26"/></svg>
-        <span class="num">Código 1</span><h3>Integridad</h3>
-        <p>Actúo igual cuando nadie me ve: lo que digo, lo que hago y lo que entrego coinciden.</p>
-        <button class="how" aria-expanded="false">Cómo lo vivo</button>
-        <p class="detail" hidden>No marco como terminada una tarea que no lo está y no me atribuyo trabajo ajeno, aunque nadie lo vaya a notar.</p>
-      </article>
-
-      <article class="card">
-        <svg class="ill" viewBox="0 0 64 64" aria-hidden="true"><circle class="bgc" cx="32" cy="32" r="30"/><rect class="pa" x="16" y="17" width="32" height="32" rx="4"/><path class="st" d="M16 26 H48 M24 13 V20 M40 13 V20"/><path class="st" d="M24 37 L29 42 L40 32"/></svg>
-        <span class="num">Código 2</span><h3>Responsabilidad</h3>
-        <p>Cumplo mis compromisos y respondo por las consecuencias de mis decisiones.</p>
-        <button class="how" aria-expanded="false">Cómo lo vivo</button>
-        <p class="detail" hidden>Organizo mis dos trabajos, la universidad y mi emprendimiento para no fallarle a nadie; si no llego a una entrega, aviso a tiempo en lugar de esconderlo.</p>
-      </article>
-
-      <article class="card">
-        <svg class="ill" viewBox="0 0 64 64" aria-hidden="true"><circle class="bgc" cx="32" cy="32" r="30"/><rect class="pa" x="13" y="22" width="34" height="20" rx="4"/><path class="st" d="M51 28 V36"/><path class="fl" d="M30 39 C24 34 19 31 21 27 C23 24 27 25 30 28 C33 25 37 24 39 27 C41 31 36 34 30 39 Z"/></svg>
-        <span class="num">Código 3</span><h3>Respeto a mí mismo</h3>
-        <p>Cuido mi salud, mi descanso y mis límites para rendir bien sin perder el equilibrio.</p>
-        <button class="how" aria-expanded="false">Cómo lo vivo</button>
-        <p class="detail" hidden>Reservo horas de descanso y no acepto más carga de la que puedo hacer bien: un desarrollador agotado comete errores que pagan otros.</p>
-      </article>
+    <div aria-label="Filtrar por tipo de ética" class="filters" role="group">
+        <button aria-pressed="true" class="chip all" data-f="all" id="f-all"><span class="dot"></span>Todos (10)
+        </button>
+        <button aria-pressed="false" class="chip personal" data-f="personal" id="f-personal"><span class="dot"></span>Ética
+            personal (3)
+        </button>
+        <button aria-pressed="false" class="chip social" data-f="social" id="f-social"><span class="dot"></span>Ética
+            social (3)
+        </button>
+        <button aria-pressed="false" class="chip prof" data-f="prof" id="f-prof"><span class="dot"></span>Ética
+            profesional (4)
+        </button>
     </div>
+    <p class="hint">Toca un tipo de ética para verlo solo, o abre “Cómo lo vivo” en cada código.</p>
 
-    <!-- SOCIAL -->
-    <div class="branch social" data-b="social">
-      <div class="head"><span class="count">3</span><h2>Ética social</h2><p>Cómo convivo con los demás y con mi comunidad.</p></div>
+    <div class="trunk"><span>Decálogo ético profesional</span></div>
 
-      <article class="card">
-        <svg class="ill" viewBox="0 0 64 64" aria-hidden="true"><circle class="bgc" cx="32" cy="32" r="30"/><circle class="pa" cx="20" cy="26" r="5"/><circle class="pa" cx="44" cy="26" r="5"/><circle class="pa" cx="32" cy="22" r="6"/><path class="st" d="M11 46 C11 38 16 34 20 34 M53 46 C53 38 48 34 44 34 M21 48 C21 38 26 31 32 31 C38 31 43 38 43 48"/></svg>
-        <span class="num">Código 4</span><h3>Respeto e inclusión</h3>
-        <p>Trato con dignidad a toda persona, sin importar su origen, edad, género o apariencia.</p>
-        <button class="how" aria-expanded="false">Cómo lo vivo</button>
-        <p class="detail" hidden>No juzgo a nadie por cómo se ve ni por su edad, y cuando programo pienso en interfaces accesibles para personas con discapacidad.</p>
-      </article>
+    <section class="tree" id="tree">
+        <!-- PERSONAL -->
+        <div class="branch personal" data-b="personal">
+            <div class="head"><span class="count">3</span>
+                <h2>Ética personal</h2>
+                <p>Cómo me conduzco conmigo mismo.</p></div>
 
-      <article class="card">
-        <svg class="ill" viewBox="0 0 64 64" aria-hidden="true"><circle class="bgc" cx="32" cy="32" r="30"/><path class="pa" d="M32 13 C24 13 19 19 19 26 C19 31 22 34 25 37 V42 H39 V37 C42 34 45 31 45 26 C45 19 40 13 32 13 Z"/><path class="st" d="M26 47 H38 M28 51 H36 M32 22 V30 M28 26 H36"/></svg>
-        <span class="num">Código 5</span><h3>Solidaridad</h3>
-        <p>Comparto lo que sé y apoyo a quien lo necesita, sin esperar nada a cambio.</p>
-        <button class="how" aria-expanded="false">Cómo lo vivo</button>
-        <p class="detail" hidden>Explico con paciencia a quien está empezando a programar y documento mi trabajo para que otros puedan aprender de él.</p>
-      </article>
+            <article class="card">
+                <svg aria-hidden="true" class="ill" viewBox="0 0 64 64">
+                    <circle class="bgc" cx="32" cy="32" r="30"/>
+                    <path class="pa" d="M32 12 L48 18 V31 C48 41 41 48 32 52 C23 48 16 41 16 31 V18 Z"/>
+                    <path class="st" d="M24 32 L30 38 L41 26"/>
+                </svg>
+                <span class="num">Código 1</span>
+                <h3>Integridad</h3>
+                <p>Actúo igual cuando nadie me ve: lo que digo, lo que hago y lo que entrego coinciden.</p>
+                <button aria-expanded="false" class="how">Cómo lo vivo</button>
+                <p class="detail" hidden>No marco como terminada una tarea que no lo está y no me atribuyo trabajo
+                    ajeno, aunque nadie lo vaya a notar.</p>
+            </article>
 
-      <article class="card">
-        <svg class="ill" viewBox="0 0 64 64" aria-hidden="true"><circle class="bgc" cx="32" cy="32" r="30"/><path class="st" d="M32 14 V48 M18 20 H46 M24 50 H40"/><path class="pa" d="M12 36 L18 22 L24 36 Z"/><path class="pa" d="M40 36 L46 22 L52 36 Z"/></svg>
-        <span class="num">Código 6</span><h3>Legalidad y honestidad cívica</h3>
-        <p>Respeto las leyes y las normas de convivencia, y rechazo la corrupción en cualquier tamaño.</p>
-        <button class="how" aria-expanded="false">Cómo lo vivo</button>
-        <p class="detail" hidden>No doy ni acepto “mordidas”, uso software con licencia legítima y respeto las licencias de código abierto que uso en mis proyectos.</p>
-      </article>
-    </div>
+            <article class="card">
+                <svg aria-hidden="true" class="ill" viewBox="0 0 64 64">
+                    <circle class="bgc" cx="32" cy="32" r="30"/>
+                    <rect class="pa" height="32" rx="4" width="32" x="16" y="17"/>
+                    <path class="st" d="M16 26 H48 M24 13 V20 M40 13 V20"/>
+                    <path class="st" d="M24 37 L29 42 L40 32"/>
+                </svg>
+                <span class="num">Código 2</span>
+                <h3>Responsabilidad</h3>
+                <p>Cumplo mis compromisos y respondo por las consecuencias de mis decisiones.</p>
+                <button aria-expanded="false" class="how">Cómo lo vivo</button>
+                <p class="detail" hidden>Organizo mis dos trabajos, la universidad y mi emprendimiento para no fallarle
+                    a nadie; si no llego a una entrega, aviso a tiempo en lugar de esconderlo.</p>
+            </article>
 
-    <!-- PROFESIONAL -->
-    <div class="branch prof" data-b="prof">
-      <div class="head"><span class="count">4</span><h2>Ética profesional</h2><p>Basados en el código IEEE-CS/ACM de ingeniería de software.</p></div>
+            <article class="card">
+                <svg aria-hidden="true" class="ill" viewBox="0 0 64 64">
+                    <circle class="bgc" cx="32" cy="32" r="30"/>
+                    <rect class="pa" height="20" rx="4" width="34" x="13" y="22"/>
+                    <path class="st" d="M51 28 V36"/>
+                    <path class="fl"
+                          d="M30 39 C24 34 19 31 21 27 C23 24 27 25 30 28 C33 25 37 24 39 27 C41 31 36 34 30 39 Z"/>
+                </svg>
+                <span class="num">Código 3</span>
+                <h3>Respeto a mí mismo</h3>
+                <p>Cuido mi salud, mi descanso y mis límites para rendir bien sin perder el equilibrio.</p>
+                <button aria-expanded="false" class="how">Cómo lo vivo</button>
+                <p class="detail" hidden>Reservo horas de descanso y no acepto más carga de la que puedo hacer bien: un
+                    desarrollador agotado comete errores que pagan otros.</p>
+            </article>
+        </div>
 
-      <article class="card">
-        <svg class="ill" viewBox="0 0 64 64" aria-hidden="true"><circle class="bgc" cx="32" cy="32" r="30"/><circle class="pa" cx="32" cy="32" r="17"/><path class="st" d="M15 32 H49 M32 15 C25 22 25 42 32 49 M32 15 C39 22 39 42 32 49"/></svg>
-        <span class="num">Código 7</span><h3>Interés público primero</h3>
-        <p>El software que construyo no debe dañar a las personas: priorizo su seguridad y bienestar.</p>
-        <span class="src">Principio 1 · Sociedad</span>
-        <button class="how" aria-expanded="false">Cómo lo vivo</button>
-        <p class="detail" hidden>No construyo funciones que engañen al usuario (patrones oscuros) y reporto los riesgos de seguridad que detecto, aunque retrasen una entrega.</p>
-      </article>
+        <!-- SOCIAL -->
+        <div class="branch social" data-b="social">
+            <div class="head"><span class="count">3</span>
+                <h2>Ética social</h2>
+                <p>Cómo convivo con los demás y con mi comunidad.</p></div>
 
-      <article class="card">
-        <svg class="ill" viewBox="0 0 64 64" aria-hidden="true"><circle class="bgc" cx="32" cy="32" r="30"/><path class="st" d="M23 29 V23 C23 18 27 14 32 14 C37 14 41 18 41 23 V29"/><rect class="pa" x="18" y="29" width="28" height="21" rx="4"/><circle class="fl" cx="32" cy="38" r="3"/><path class="st" d="M32 40 V44"/></svg>
-        <span class="num">Código 8</span><h3>Confidencialidad y privacidad</h3>
-        <p>Protejo los datos de mis usuarios, clientes y empleadores como si fueran míos.</p>
-        <span class="src">Principio 2 · Cliente y empleador</span>
-        <button class="how" aria-expanded="false">Cómo lo vivo</button>
-        <p class="detail" hidden>Nunca dejo contraseñas en el código, pido solo los datos necesarios y cuido con más rigor la información de menores en plataformas escolares.</p>
-      </article>
+            <article class="card">
+                <svg aria-hidden="true" class="ill" viewBox="0 0 64 64">
+                    <circle class="bgc" cx="32" cy="32" r="30"/>
+                    <circle class="pa" cx="20" cy="26" r="5"/>
+                    <circle class="pa" cx="44" cy="26" r="5"/>
+                    <circle class="pa" cx="32" cy="22" r="6"/>
+                    <path class="st"
+                          d="M11 46 C11 38 16 34 20 34 M53 46 C53 38 48 34 44 34 M21 48 C21 38 26 31 32 31 C38 31 43 38 43 48"/>
+                </svg>
+                <span class="num">Código 4</span>
+                <h3>Respeto e inclusión</h3>
+                <p>Trato con dignidad a toda persona, sin importar su origen, edad, género o apariencia.</p>
+                <button aria-expanded="false" class="how">Cómo lo vivo</button>
+                <p class="detail" hidden>No juzgo a nadie por cómo se ve ni por su edad, y cuando programo pienso en
+                    interfaces accesibles para personas con discapacidad.</p>
+            </article>
 
-      <article class="card">
-        <svg class="ill" viewBox="0 0 64 64" aria-hidden="true"><circle class="bgc" cx="32" cy="32" r="30"/><path class="st" d="M22 22 L13 32 L22 42 M42 22 L51 32 L42 42"/><circle class="pa" cx="32" cy="32" r="9"/><path class="st" d="M28 32 L31 35 L36 29"/></svg>
-        <span class="num">Código 9</span><h3>Calidad en lo que entrego</h3>
-        <p>Busco los estándares más altos: pruebo, reviso y soy honesto sobre los alcances y plazos.</p>
-        <span class="src">Principio 3 · Producto</span>
-        <button class="how" aria-expanded="false">Cómo lo vivo</button>
-        <p class="detail" hidden>Escribo pruebas, pido revisión de código y no prometo fechas que sé que no puedo cumplir solo para quedar bien.</p>
-      </article>
+            <article class="card">
+                <svg aria-hidden="true" class="ill" viewBox="0 0 64 64">
+                    <circle class="bgc" cx="32" cy="32" r="30"/>
+                    <path class="pa"
+                          d="M32 13 C24 13 19 19 19 26 C19 31 22 34 25 37 V42 H39 V37 C42 34 45 31 45 26 C45 19 40 13 32 13 Z"/>
+                    <path class="st" d="M26 47 H38 M28 51 H36 M32 22 V30 M28 26 H36"/>
+                </svg>
+                <span class="num">Código 5</span>
+                <h3>Solidaridad</h3>
+                <p>Comparto lo que sé y apoyo a quien lo necesita, sin esperar nada a cambio.</p>
+                <button aria-expanded="false" class="how">Cómo lo vivo</button>
+                <p class="detail" hidden>Explico con paciencia a quien está empezando a programar y documento mi trabajo
+                    para que otros puedan aprender de él.</p>
+            </article>
 
-      <article class="card">
-        <svg class="ill" viewBox="0 0 64 64" aria-hidden="true"><circle class="bgc" cx="32" cy="32" r="30"/><path class="pa" d="M12 20 C19 18 26 19 32 23 V48 C26 44 19 43 12 45 Z"/><path class="pa" d="M52 20 C45 18 38 19 32 23 V48 C38 44 45 43 52 45 Z"/><path class="st" d="M46 9 V15 M43 12 H49"/></svg>
-        <span class="num">Código 10</span><h3>Aprendizaje permanente</h3>
-        <p>Me actualizo toda la vida y reconozco con humildad lo que todavía no sé.</p>
-        <span class="src">Principio 8 · Personal</span>
-        <button class="how" aria-expanded="false">Cómo lo vivo</button>
-        <p class="detail" hidden>Estudio mi carrera mientras trabajo, leo documentación oficial antes de improvisar y acepto las correcciones sin ponerme a la defensiva.</p>
-      </article>
-    </div>
-  </section>
+            <article class="card">
+                <svg aria-hidden="true" class="ill" viewBox="0 0 64 64">
+                    <circle class="bgc" cx="32" cy="32" r="30"/>
+                    <path class="st" d="M32 14 V48 M18 20 H46 M24 50 H40"/>
+                    <path class="pa" d="M12 36 L18 22 L24 36 Z"/>
+                    <path class="pa" d="M40 36 L46 22 L52 36 Z"/>
+                </svg>
+                <span class="num">Código 6</span>
+                <h3>Legalidad y honestidad cívica</h3>
+                <p>Respeto las leyes y las normas de convivencia, y rechazo la corrupción en cualquier tamaño.</p>
+                <button aria-expanded="false" class="how">Cómo lo vivo</button>
+                <p class="detail" hidden>No doy ni acepto “mordidas”, uso software con licencia legítima y respeto las
+                    licencias de código abierto que uso en mis proyectos.</p>
+            </article>
+        </div>
+
+        <!-- PROFESIONAL -->
+        <div class="branch prof" data-b="prof">
+            <div class="head"><span class="count">4</span>
+                <h2>Ética profesional</h2>
+                <p>Basados en el código IEEE-CS/ACM de ingeniería de software.</p></div>
+
+            <article class="card">
+                <svg aria-hidden="true" class="ill" viewBox="0 0 64 64">
+                    <circle class="bgc" cx="32" cy="32" r="30"/>
+                    <circle class="pa" cx="32" cy="32" r="17"/>
+                    <path class="st" d="M15 32 H49 M32 15 C25 22 25 42 32 49 M32 15 C39 22 39 42 32 49"/>
+                </svg>
+                <span class="num">Código 7</span>
+                <h3>Interés público primero</h3>
+                <p>El software que construyo no debe dañar a las personas: priorizo su seguridad y bienestar.</p>
+                <span class="src">Principio 1 · Sociedad</span>
+                <button aria-expanded="false" class="how">Cómo lo vivo</button>
+                <p class="detail" hidden>No construyo funciones que engañen al usuario (patrones oscuros) y reporto los
+                    riesgos de seguridad que detecto, aunque retrasen una entrega.</p>
+            </article>
+
+            <article class="card">
+                <svg aria-hidden="true" class="ill" viewBox="0 0 64 64">
+                    <circle class="bgc" cx="32" cy="32" r="30"/>
+                    <path class="st" d="M23 29 V23 C23 18 27 14 32 14 C37 14 41 18 41 23 V29"/>
+                    <rect class="pa" height="21" rx="4" width="28" x="18" y="29"/>
+                    <circle class="fl" cx="32" cy="38" r="3"/>
+                    <path class="st" d="M32 40 V44"/>
+                </svg>
+                <span class="num">Código 8</span>
+                <h3>Confidencialidad y privacidad</h3>
+                <p>Protejo los datos de mis usuarios, clientes y empleadores como si fueran míos.</p>
+                <span class="src">Principio 2 · Cliente y empleador</span>
+                <button aria-expanded="false" class="how">Cómo lo vivo</button>
+                <p class="detail" hidden>Nunca dejo contraseñas en el código, pido solo los datos necesarios y cuido con
+                    más rigor la información de menores en plataformas escolares.</p>
+            </article>
+
+            <article class="card">
+                <svg aria-hidden="true" class="ill" viewBox="0 0 64 64">
+                    <circle class="bgc" cx="32" cy="32" r="30"/>
+                    <path class="st" d="M22 22 L13 32 L22 42 M42 22 L51 32 L42 42"/>
+                    <circle class="pa" cx="32" cy="32" r="9"/>
+                    <path class="st" d="M28 32 L31 35 L36 29"/>
+                </svg>
+                <span class="num">Código 9</span>
+                <h3>Calidad en lo que entrego</h3>
+                <p>Busco los estándares más altos: pruebo, reviso y soy honesto sobre los alcances y plazos.</p>
+                <span class="src">Principio 3 · Producto</span>
+                <button aria-expanded="false" class="how">Cómo lo vivo</button>
+                <p class="detail" hidden>Escribo pruebas, pido revisión de código y no prometo fechas que sé que no
+                    puedo cumplir solo para quedar bien.</p>
+            </article>
+
+            <article class="card">
+                <svg aria-hidden="true" class="ill" viewBox="0 0 64 64">
+                    <circle class="bgc" cx="32" cy="32" r="30"/>
+                    <path class="pa" d="M12 20 C19 18 26 19 32 23 V48 C26 44 19 43 12 45 Z"/>
+                    <path class="pa" d="M52 20 C45 18 38 19 32 23 V48 C38 44 45 43 52 45 Z"/>
+                    <path class="st" d="M46 9 V15 M43 12 H49"/>
+                </svg>
+                <span class="num">Código 10</span>
+                <h3>Aprendizaje permanente</h3>
+                <p>Me actualizo toda la vida y reconozco con humildad lo que todavía no sé.</p>
+                <span class="src">Principio 8 · Personal</span>
+                <button aria-expanded="false" class="how">Cómo lo vivo</button>
+                <p class="detail" hidden>Estudio mi carrera mientras trabajo, leo documentación oficial antes de
+                    improvisar y acepto las correcciones sin ponerme a la defensiva.</p>
+            </article>
+        </div>
+    </section>
 </main>
 
 <footer class="foot">
-  <div class="wrap">
-    <span>Universidad Virtual del Estado de Guanajuato · Ética y responsabilidad social v2</span>
-    <span>Fuente de los códigos profesionales: IEEE-CS/ACM, Código de Ética y Práctica Profesional 5.2 (1999)</span>
-  </div>
+    <div class="wrap">
+        <span>Universidad Virtual del Estado de Guanajuato · Ética y responsabilidad social v2</span>
+        <span>Fuente de los códigos profesionales: IEEE-CS/ACM, Código de Ética y Práctica Profesional 5.2 (1999)</span>
+    </div>
 </footer>
 
 <script>
-(function(){
-  var chips=[].slice.call(document.querySelectorAll('.chip'));
-  var branches=[].slice.call(document.querySelectorAll('.branch'));
-  var tree=document.getElementById('tree');
-  chips.forEach(function(c){c.addEventListener('click',function(){
-    var f=c.getAttribute('data-f');
-    chips.forEach(function(o){o.setAttribute('aria-pressed',o===c?'true':'false')});
-    branches.forEach(function(b){b.hidden=!(f==='all'||b.getAttribute('data-b')===f)});
-    tree.style.gridTemplateColumns=f==='all'?'':'minmax(0,560px)';
-    tree.style.justifyContent=f==='all'?'':'center';
-    tree.classList.toggle('solo',f!=='all');
-  })});
-  [].slice.call(document.querySelectorAll('.how')).forEach(function(b){b.addEventListener('click',function(){
-    var d=b.nextElementSibling, open=b.getAttribute('aria-expanded')==='true';
-    b.setAttribute('aria-expanded',open?'false':'true'); d.hidden=open;
-  })});
-})();
+    (function () {
+        var chips = [].slice.call(document.querySelectorAll('.chip'));
+        var branches = [].slice.call(document.querySelectorAll('.branch'));
+        var tree = document.getElementById('tree');
+        chips.forEach(function (c) {
+            c.addEventListener('click', function () {
+                var f = c.getAttribute('data-f');
+                chips.forEach(function (o) {
+                    o.setAttribute('aria-pressed', o === c ? 'true' : 'false')
+                });
+                branches.forEach(function (b) {
+                    b.hidden = !(f === 'all' || b.getAttribute('data-b') === f)
+                });
+                tree.style.gridTemplateColumns = f === 'all' ? '' : 'minmax(0,560px)';
+                tree.style.justifyContent = f === 'all' ? '' : 'center';
+                tree.classList.toggle('solo', f !== 'all');
+            })
+        });
+        [].slice.call(document.querySelectorAll('.how')).forEach(function (b) {
+            b.addEventListener('click', function () {
+                var d = b.nextElementSibling, open = b.getAttribute('aria-expanded') === 'true';
+                b.setAttribute('aria-expanded', open ? 'false' : 'true');
+                d.hidden = open;
+            })
+        });
+    })();
 </script>
-<style>.tree.solo::before,.tree.solo::after,.tree.solo .branch::before{display:none}</style>
+<style>.tree.solo::before, .tree.solo::after, .tree.solo .branch::before {
+    display: none
+}</style>
 
-</body></html>
+</body>
+</html>
